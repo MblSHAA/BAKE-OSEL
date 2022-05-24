@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+#checklox {
+  display: none;
+}
+.box-btn {
+  moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 4vh;
+  width: 90vh;
+  height: 15vh;
+  background-color: rgb(255, 149, 0);
+  border: 1px solid rgb(203, 118, 0);
+}
+.box-btn:hover {
+  background-color: rgb(254, 162, 32);
+}
+.box-btn:active {
+  background-color: rgb(203, 118, 0);
+}
+
+.box-btn2 {
+  moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 4vh;
+  width: 90vh;
+  height: 15vh;
+  background-color: rgb(255, 149, 0);
+  border: 1px solid rgb(203, 118, 0);
+}
+.box-btn2:hover {
+  background-color: rgb(254, 162, 32);
+}
+.box-btn2:active {
+  background-color: rgb(203, 118, 0);
+}
+.bake {
+  text-align: center;
+  display: none;
+  font-size: 20vh;
+  color: orange;
+  transition: all 0.5 ease;
+}
+#check {
+  display: none;
+}
+#checklox:checked ~ .bake {
+  display: block;
+}
+#checklox:checked ~ label .box-btn {
+  display: none;
+}
+#check:checked ~ .bake {
+  color: aqua;
+}
+
+/* ------------------------------------- */
+.box-osel {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#osel {
+  display: none;
+  width: 70vh;
+  height: 35vh;
+  margin: 20px 30%;
+}
+
+#checkosel {
+  display: none;
+}
+
+#checkosel:checked ~ #osel {
+  display: block;
+}
